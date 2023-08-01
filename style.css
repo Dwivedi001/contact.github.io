@@ -1,0 +1,766 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* top bar design */
+
+.topbar {
+    background-color: white;
+    padding: 25px 5px;
+    border-bottom: 2px dotted grey;
+}
+
+.topbar1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top-item a span {
+    color: skyblue;
+}
+
+.top-item a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.top-item a .bi {
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.top-item-last {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-item-last a {
+    color: grey;
+    padding: 0 10px;
+}
+
+
+/* header */
+
+.header {
+    padding: 30px 100px;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-last {
+    background-color: rgb(27, 27, 69);
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid aqua;
+}
+
+.header-last h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.header-last p {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.header-last span {
+    color: aqua;
+    padding: 20px;
+}
+
+
+/* header end */
+
+
+/* sidebar */
+
+#sidenav {
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+#menubtn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    top: 100px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.side-logo {
+    padding: 30px;
+    background-color: white;
+}
+
+.side-logo img {
+    padding: 30px;
+}
+
+.side-item {
+    background-color: rgb(27, 27, 69);
+    border-bottom: 2px solid black;
+}
+
+.side-item ul {
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.side-item ul li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+.side-item ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.drop p {
+    padding: 20px;
+}
+
+.side-item ul li:hover .drop {
+    display: block;
+}
+
+.side-item-2 {
+    background-color: rgb(27, 27, 69);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.side-item-2 .first {
+    font-size: 30px;
+}
+
+.side-item-2 .second {
+    font-size: 30px;
+}
+
+.side-item-3 {
+    padding: 20px;
+    background-color: rgb(27, 27, 69);
+}
+
+.side-item-3 input {
+    height: 50px;
+    width: 400px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    position: relative;
+}
+
+.searchbox {
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    right: 100px;
+    position: absolute;
+    padding: 15px;
+}
+
+
+/* contact-details start */
+
+.contact-us {
+    display: flex;
+    padding: 30px;
+    margin: 30px;
+}
+
+.contact-left {
+    padding: 5px;
+    width: 35%;
+}
+
+.contact-left h2 {
+    color: rgb(27, 27, 69);
+    padding: 30px;
+    font-size: 30px;
+}
+
+.contact-left p {
+    color: grey;
+    padding: 30px;
+}
+
+.contact-left h4 {
+    color: grey;
+    padding: 10px;
+}
+
+.contact-left h4 .bi {
+    color: aqua;
+    padding: 0px 15px;
+    font-size: 25px;
+}
+
+.icon {
+    padding: 30px;
+}
+
+.icon .bi:hover {
+    background-color: rgb(27, 27, 69);
+}
+
+.icon .fb {
+    background-color: blue;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.icon .tw {
+    background-color: aqua;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.icon .yt {
+    background-color: red;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.icon .ig {
+    background-color: black;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.contact-mid {
+    padding: 5px;
+    width: 30%;
+}
+
+.contact-mid h2 {
+    color: rgb(27, 27, 69);
+    padding: 30px;
+    font-size: 30px;
+}
+
+.contact-mid h4 {
+    color: grey;
+    padding: 10px 30px;
+}
+
+
+/* contact form */
+
+.contact-right {
+    padding: 30px;
+}
+
+.contact {
+    background-color: rgb(237, 240, 247);
+    border-radius: 10px;
+}
+
+.contact1 {
+    padding: 30px;
+}
+
+form input {
+    margin: 20px 0px;
+    border-radius: 20px;
+    padding: 20px 0px;
+    border: 0;
+    width: 300px;
+}
+
+form textarea {
+    border-radius: 20px;
+    padding: 20px 0px;
+    border: 0;
+    width: 300px;
+}
+
+form button {
+    padding: 20px 50px;
+    color: rgb(27, 27, 69);
+    border: 0;
+    background-color: aqua;
+    border-radius: 40px;
+    width: 300px;
+}
+
+form button:hover {
+    background-color: rgb(27, 27, 69);
+    color: white;
+}
+
+
+/* map */
+
+.map1 {
+    width: 100%;
+}
+
+
+/* footer start */
+
+.footer {
+    background-color: rgb(27, 27, 69);
+}
+
+.footertop {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    border-bottom: 3px dotted black;
+}
+
+.f-form {
+    display: flex;
+}
+
+.f-form a {
+    padding: 20px 50px;
+    border-radius: 40px;
+    background-color: aqua;
+    text-decoration: none;
+    right: 500px;
+}
+
+.f-form input {
+    padding: 20px 50px;
+    border-radius: 40px;
+    border: 0;
+    position: relative;
+}
+
+.f-form .f-sub {
+    padding: 18px;
+    right: 400px;
+    position: absolute;
+}
+
+.f-icon h2 {
+    color: white;
+}
+
+.f-icon .bi {
+    color: aqua;
+}
+
+.f-icon .bi:hover {
+    color: white;
+}
+
+.footer-mid {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.middle1 {
+    padding: 30px;
+    color: white;
+}
+
+.middle1 h2 {
+    color: aqua;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.middle1 p {
+    padding: 20px;
+}
+
+.explore {
+    display: flex;
+    padding: 60px;
+}
+
+.explore h2 {
+    color: aqua;
+    padding: 30px;
+}
+
+.explore .left {
+    padding: 30px;
+}
+
+.explore .left ul li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.explore .left ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.recent {
+    padding: 20px;
+}
+
+.recent>h2 {
+    color: aqua;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.recent-row {
+    display: flex;
+}
+
+.footer-end {
+    background-color: rgb(29, 29, 82);
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* footer end */
+
+
+/* media query */
+
+@media screen and (min-width:100px) and (max-width:768px) {
+    /* top bar design */
+    body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .topbar {
+        background-color: white;
+        padding: 15px 0px;
+        margin: 10px 0px;
+        border-bottom: 2px dotted grey;
+    }
+    .topbar1 {
+        display: block;
+        padding: 10px 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-item {
+        padding: 10px 10px;
+    }
+    .top-item a span {
+        color: skyblue;
+        padding: 14px 10px;
+    }
+    .top-item a {
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    .top-item a .bi {
+        background-color: blue;
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    .top-item-last {
+        display: flex;
+        padding: 20px 0px;
+        font-size: 30px;
+        justify-content: space-between;
+    }
+    .top-item-last a {
+        color: rgb(49, 48, 48);
+        padding: 0 10px;
+        color: rgb(29, 29, 82);
+    }
+    /* top-end */
+    /* header */
+    .header {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .header1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .header-last {
+        background-color: rgb(27, 27, 69);
+        text-align: center;
+        padding: 10px;
+        border-bottom: 4px solid aqua;
+    }
+    .header-last h1 {
+        color: white;
+        font-size: 30px;
+    }
+    .header-last p {
+        color: white;
+        font-size: 10px;
+        padding: 20px;
+    }
+    .header-last span {
+        color: aqua;
+        padding: 20px;
+    }
+    /* header end */
+    /* contact-details start */
+    .contact-us {
+        display: block;
+        padding: 20px 10px;
+        margin: 10px;
+    }
+    .contact-left {
+        padding: 5px;
+        width: 100%;
+    }
+    .contact-left h2 {
+        color: rgb(27, 27, 69);
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+    .contact-left p {
+        color: grey;
+        padding: 20px 10px;
+    }
+    .contact-left h4 {
+        color: grey;
+        padding: 10px 0px;
+    }
+    .contact-left h4 .bi {
+        color: aqua;
+        padding: 0px 15px;
+        font-size: 15px;
+    }
+    .icon {
+        padding: 30px 10px;
+    }
+    .icon .bi:hover {
+        background-color: rgb(27, 27, 69);
+    }
+    .icon .fb {
+        background-color: blue;
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        border-radius: 10px;
+    }
+    .icon .tw {
+        background-color: aqua;
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        border-radius: 10px;
+    }
+    .icon .yt {
+        background-color: red;
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        border-radius: 10px;
+    }
+    .icon .ig {
+        background-color: black;
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        border-radius: 10px;
+    }
+    .contact-mid {
+        padding: 0px;
+        width: 100%;
+    }
+    .contact-mid h2 {
+        color: rgb(27, 27, 69);
+        padding: 30px 10px;
+        font-size: 20px;
+    }
+    .contact-mid h4 {
+        color: grey;
+        padding: 5px 10px;
+    }
+    /* contact form */
+    .contact-right {
+        padding: 30px 10px;
+        width: 100%;
+    }
+    .contact {
+        background-color: rgb(237, 240, 247);
+        border-radius: 10px;
+    }
+    .contact1 {
+        padding: 10px 10px;
+    }
+    form input {
+        margin: 20px 0px;
+        border-radius: 20px;
+        padding: 20px 10px;
+        border: 0;
+        width: 100%;
+    }
+    form textarea {
+        border-radius: 20px;
+        padding: 20px 0px;
+        border: 0;
+        width: 100%;
+    }
+    form button {
+        padding: 20px 50px;
+        color: rgb(27, 27, 69);
+        border: 0;
+        background-color: aqua;
+        border-radius: 40px;
+        width: 100%;
+    }
+    form button:hover {
+        background-color: rgb(27, 27, 69);
+        color: white;
+    }
+    /* footer start */
+    .footer {
+        background-color: rgb(27, 27, 69);
+    }
+    .footertop {
+        display: block;
+        justify-content: space-evenly;
+        padding: 50px;
+        border-bottom: 3px dotted black;
+    }
+    .f-form {
+        display: block;
+        padding: 20px;
+    }
+    .f-form a {
+        padding: 20px 50px;
+        border-radius: 40px;
+        background-color: aqua;
+        text-decoration: none;
+        right: 500px;
+    }
+    .f-form input {
+        padding: 20px 50px;
+        border-radius: 40px;
+        border: 0;
+    }
+    .f-form .f-sub {
+        display: none;
+        padding-top: 30px;
+        right: 0px;
+    }
+    .f-icon h2 {
+        color: white;
+    }
+    .f-icon .bi {
+        color: aqua;
+        padding: 30px 0;
+    }
+    .f-icon .bi:hover {
+        color: white;
+    }
+    .footer-mid {
+        display: block;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .middle1 {
+        padding: 30px;
+        color: white;
+    }
+    .middle1 h2 {
+        color: aqua;
+        padding: 30px;
+        font-size: 30px;
+    }
+    .middle1 p {
+        padding: 20px;
+    }
+    .explore {
+        display: block;
+        padding: 60px;
+    }
+    .explore h2 {
+        color: aqua;
+        padding: 30px;
+    }
+    .explore .left {
+        padding: 30px;
+    }
+    .explore .left ul li {
+        list-style-type: none;
+        padding: 10px;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    .explore .left ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+    }
+    .recent {
+        padding: 20px;
+    }
+    .recent>h2 {
+        color: aqua;
+        padding: 30px;
+        font-size: 30px;
+    }
+    .recent-row {
+        display: flex;
+    }
+    .footer-end {
+        background-color: rgb(29, 29, 82);
+        text-align: center;
+        padding: 50px;
+    }
+    /* sidebar */
+    #menubtn {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        border-radius: 3px;
+        z-index: 3;
+        cursor: pointer;
+    }
+}
